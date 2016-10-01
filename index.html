@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Patrick Joyce Photography</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+		
+		
+    body 
+	{
+        padding-top: 70px;
+		background-image: url(images/leatherbg.jpg);
+		color: aliceblue;
+		
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+		
+	li 
+		{
+			list-style-type: none;
+			
+		}	
+		
+		h1
+		{
+			color: white;
+		}
+		
+		.panel-transparent
+		{
+    	background: rgba(30, 30, 30, 0.5)!important;
+		border-color: aquamarine;
+		
+			
+		}
+
+		.panel-transparent .panel-body{
+    	background: rgba(150, 150, 150, 0.1)!important;
+		}	
+		
+		.twitter-tweet
+		{
+			width:200;
+			text-align: center;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+	
+    </style>
+	<script>
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	</script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body
+	  
+	  
+	
+<script>
+
+</script>
+	
+	
+<script>	
+xmlhttp=new XMLHttpRequest();
+xmlhttp.open("GET","cd3.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML; 
+x=xmlDoc.getElementsByTagName("CD");
+
+function displayCDInfo(i)
+{
+model=(x[i].getElementsByTagName("MODEL")[0].childNodes[0].nodeValue);
+title=(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+lens=(x[i].getElementsByTagName("LENS")[0].childNodes[0].nodeValue);
+country=(x[i].getElementsByTagName("COUNTRY")[0].childNodes[0].nodeValue);
+audio=(x[i].getElementsByTagName("AUDIO")[0].childNodes[0].nodeValue);
+camera=(x[i].getElementsByTagName("CAMERA")[0].childNodes[0].nodeValue);
+image=(x[i].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue);
+youtube=(x[i].getElementsByTagName("YOUTUBE")[0].childNodes[0].nodeValue);
+
+
+
+txt = "Model: " + model + "<br />Title: " + title + "<br />Camera used: "+ camera + "<br />Photoshoot Location: "+ country +" <br />  Lens Used: "+ lens + " <br/><br/><H4>Sample Thumbnail Image</H4><img src = "+image+ " class= img-thumbnail width =200 height = 200 ><br/><br/><br/><H4>Listen to the podcast about the shoot</H4><audio controls = controls> <source src ="+audio+"></audio><br /><br/><br /><H3>Watch the slideshow below</H3><iframe src = http://www.youtube.com/embed/"+youtube +" width =100% height=345><br/><br/>";
+	
+
+	
+
+/*txt = "Model: " + artist + "<br />Title: " + title + "<br />Year: "+ year+ "<br />Country: "+ country+" <br /> Audio: <br /> <audio controls = controls> <source src ="+audio+" ></audio> <br/>Price: "+price + " <br/><B>Image:</B> <br /> <img src = "+image+ " class= img-thumbnail width =200 height = 200 ><br/> youtube:<BR><iframe  src = http://www.youtube.com/embed/"+youtube +" width =420 height=345> <br/> flickr:<BR> <img src = https://flic.kr/p/dc3CY4"+ flickr;*/
+	
+	
+	
+	
+	
+	
+document.getElementById("showCD").innerHTML=txt;
+
+}
+</script>
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://www.flickr.com/photos/patrickjoyce1979/"target="_blank">Flickr</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="https://plus.google.com/101341738890938255343/about "target="_blank">About</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCS7u63BiMqxt8PYVilLVk4Q"target="_blank">Youtube Channel</a>
+                    </li>
+                    <li>
+                        <a href="http://technicalbp.blogspot.ie/"target="_blank">Blogger</a>
+                    </li>
+					<li>
+                        
+                    </li>
+					<li>
+                        
+                    </li>
+					<li>
+                        
+                    </li>
+					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <div class="panel-transparent">
+					<H1>Click below</H1>
+  					<div   class="panel-body">
+<script>
+for (var i=0;i<x.length;i++)
+  { 
+  
+  document.write("<li onclick='displayCDInfo(" + i + ")'>");
+  document.write("<br><B>");
+  document.write(x[i].getElementsByTagName("MODEL")[0].childNodes[0].nodeValue);
+  document.write("</B><br>");
+  document.write(x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue);
+  document.write("<br><img src =");
+  document.write(x[i].getElementsByTagName("IMAGE")[0].childNodes[0].nodeValue);
+  document.write(" width =100><br>");
+  document.write("<br>");
+ 
+
+ document.write("</li>");
+  }
+
+</script></div>
+				</div>
+            </div>
+			
+			<div class="col-md-4 text-center">
+                
+				<div class="panel-transparent">
+					<H1>Full Details</H1>
+  					<div id='showCD' class="panel-body">Details will display here</div>
+				</div>
+            </div>
+			
+			
+			<div class="col-md-5 text-center">
+                <div class="panel-transparent">
+					<H1>Flickr Slideshow</H1>
+  					<div id='showCD' class="panel-body"><div class = "container-fluid">
+		<div style="width:300px;height:100%;text-align:center;margin:auto;" ><object width="100%" height="300" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"  codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"> <param name="flashvars" value="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Fpatrickjoyce1979%2Fshow&amp;page_show_back_url=%2Fphotos%2Fpatrickjoyce1979%2F&amp;user_id=33239515@N04" /> <param name="allowFullScreen" value="true" /> <param name="src" value="https://www.flickr.com/apps/slideshow/show.swf?v=71649" /> <embed width="100%" height="300" type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=71649" flashvars="offsite=true&amp;lang=en-us&amp;page_show_url=%2Fphotos%2Fpatrickjoyce1979%2Fshow&amp;page_show_back_url=%2Fphotos%2Fpatrickjoyce1979%2F&amp;user_id=33239515@N04" allowFullScreen="true" /> </object></div></div>
+						
+						
+						
+						</br>
+						</br>
+						</br>
+						</br>
+						
+ 				<iframe frameborder="0" width="100%" height="320" src="http://G00316712PJ.tweetwally.com/embed" target="_blank" align="center" scrolling="Auto"></iframe>
+		
+		
+
+
+						
+				</div>
+					
+					
+					
+					
+					
+            </div>
+			</div>
+			
+					
+            
+	
+			
+			
+        </div>
+        <!-- /.row -->
+		
+		
+		
+
+			
+    </div>
+    <!-- /.container -->
+	
+	
+	
+	
+	
+	</div>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+</body>
+
+</html>

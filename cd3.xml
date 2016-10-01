@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CATALOG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CD>
+		<TITLE>portfolio shoot</TITLE>
+		<MODEL>Aoife</MODEL>
+		<COUNTRY>Bedroom</COUNTRY>
+		<AUDIO>AUDIO/AoifeAudio.wav</AUDIO>
+		<CAMERA>D300</CAMERA>
+		<LENS>50mm</LENS>
+		<IMAGE>images/aoife12.jpg</IMAGE>
+		<YOUTUBE>xGL_4bJZTkA</YOUTUBE>
+		
+		
+	</CD>
+	<CD>
+		<TITLE>Outdoor Shoot</TITLE>
+		<MODEL>Niaomi</MODEL>
+		<COUNTRY>Headford Abby</COUNTRY>
+		<AUDIO>AUDIO/NiaomiAudio.wav</AUDIO>
+		<CAMERA>D300</CAMERA>
+		<LENS>70-200mm</LENS>
+		<IMAGE>images/naomi11.jpg</IMAGE>
+		<YOUTUBE>3L-m_LL_4pU</YOUTUBE>
+		
+		
+		
+	</CD>
+	<CD>
+		<TITLE>Outdoor Shoot</TITLE>
+		<MODEL>Sarah</MODEL>
+		<COUNTRY>Jungle Cafe</COUNTRY>
+		<AUDIO>AUDIO/SarahAudio.wav</AUDIO>
+		<CAMERA>D300</CAMERA>
+		<LENS>16-125mm</LENS>
+		<IMAGE>images/sarah10.jpg</IMAGE>
+		<YOUTUBE>swkKlwr9xRQ</YOUTUBE>
+		
+	</CD>
+	<CD>
+		<TITLE>Music Video</TITLE>
+		<MODEL>Music video crew</MODEL>
+		<COUNTRY>Connacht Laundry</COUNTRY>
+		<AUDIO>AUDIO/musicvidAudio.wav</AUDIO>
+		<CAMERA>D300</CAMERA>
+		<LENS>16-125mm</LENS>
+		<IMAGE>images/musicvid13.jpg</IMAGE>
+		<YOUTUBE>ezfVTuW1GnA</YOUTUBE>
+		
+	</CD>
+
+</CATALOG>
